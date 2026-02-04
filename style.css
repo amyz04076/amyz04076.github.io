@@ -203,8 +203,8 @@ a:focus {
 }
 
 .img-item {
-display:flex;
-flex:1;
+  display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: flex-start;
   gap: 1rem;
@@ -216,4 +216,65 @@ flex:1;
   height: auto;
   object-fit: contain;
   display: block;
+}
+
+/* breakpoints */
+
+@media (width < 64rem) {
+  .two-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-content {
+    width: 100%;
+  }
+}
+
+@media (width < 36rem) {
+.content {
+  padding-inline: 2rem;
+  padding-block: 2rem;
+
+}
+.navigation {
+  padding-inline: 2rem;
+  padding-top: 2rem;
+}
+
+.p-regular {
+  font-size: 0.8rem;
+}
+
+.heading-1 {
+  font-size: 2rem;
+
+}
+
+.heading-3 {
+  font-size: 1rem;
+}
+
+.heading-4 {
+  font-size: 0.9rem;
+}
+
+.nav-text-link {
+    font-size: 0.8rem;
+}
+
+.label {
+  font-size: 0.8rem;
+}
+
+
+.left-nav {
+  gap: 0.5rem;
+}
+
+.right-nav {
+
+  border-radius: 0;
+  gap: 1rem;
+}
+
 }
