@@ -231,6 +231,25 @@ a:focus {
   animation: bounceIn 0.6s ease-out forwards;
 }
 
+.vis-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding:2rem;
+}
+
+.flower-vis{
+      background-color: rgb(133, 190, 98);
+
+}
+
+.cat-vis{
+      background-color: rgb(248, 230, 235);
+    align-items: center;
+    gap: 2rem;
+}
+
 @keyframes bounceIn {
   0% {
     transform: scale(0.8) translateY(20px);
