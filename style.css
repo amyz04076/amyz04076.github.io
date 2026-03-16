@@ -277,6 +277,17 @@ a:focus {
   }
 }
 
+/* Vis container */
+#visContainer {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1em;
+}
+
+#visContainer svg {
+    width: 100%;
+    height: auto;
+}
 /* breakpoints */
 
 @media (width < 84rem) {
