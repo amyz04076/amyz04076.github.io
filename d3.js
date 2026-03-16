@@ -3,8 +3,8 @@ import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 let svg;
 let circles = [];
 
-const width = 800;
-const height = 600;
+const width = 1000;
+const height = 800;
 const maxCircles = 10;
 
 async function prepareVis() {
@@ -25,7 +25,7 @@ async function prepareVis() {
       .append("circle")
       .attr("cx", x)
       .attr("cy", y)
-      .attr("r", 15)
+      .attr("r", 64)
       .attr("fill", "#88a6ff");
 
     circles.push(circle);
@@ -33,7 +33,6 @@ async function prepareVis() {
 }
 
 async function drawVis() {
-  // No default circle needed now
 }
 
 async function runApp() {
